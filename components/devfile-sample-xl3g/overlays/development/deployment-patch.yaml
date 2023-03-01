@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xl3g
+  namespace: halawren-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:eb9ce3fc2781f2098f6d1c5dbdf723ef32d270594eaee05a0fee2f90930f3a47
+        name: my-nodejs
+        resources: {}
+status: {}
