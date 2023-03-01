@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-xl3g
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:b1cix-devfile-sample-xl3g
+      - image: quay.io/redhat-appstudio/user-workload@sha256:eb9ce3fc2781f2098f6d1c5dbdf723ef32d270594eaee05a0fee2f90930f3a47
         name: my-nodejs
         ports:
         - containerPort: 3001
